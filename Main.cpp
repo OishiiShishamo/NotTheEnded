@@ -24,6 +24,8 @@ mainLoop Loop;
 
 Player Plyr;
 
+std::random_device rng;
+
 std::vector<Bullet> Bullets;
 std::vector<Laser> Lasers;
 std::vector<playerShot> plyrShots;

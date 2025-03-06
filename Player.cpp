@@ -30,7 +30,7 @@ Player::MovePlayer() {
 		if (GetAsyncKeyState(VK_LEFT)) vec.x -= 1;
 		if (GetAsyncKeyState(VK_UP)) vec.y -= 1;
 		if (GetAsyncKeyState(VK_DOWN)) vec.y += 1;
-		VecNorm(vec.x, vec.y);
+		VecNorm(vec);
 		if (GetAsyncKeyState(VK_SHIFT)) {
 			pos.x += vec.x * Slow;
 			pos.y += vec.y * Slow;
@@ -60,7 +60,7 @@ Player::ShowPlayer() {
 void
 Player::Shot() {
 	if (GetAsyncKeyState(0x5A)) {
-		CreatePlayerShot(pos, Color(255, 255, 255), 0, BLEND_ADD, 255, 1, 24, 24, 0, 0, 1.0f, 1.0f, 0, 0, Rad(90), Rad(90), 0, 0, 0, 50, EASEINCUBIC, 60);
+		//CreatePlayerShot(pos, Color(255, 255, 255), 0, BLEND_ADD, 255, 1, 24, 24, 0, 0, 1.0f, 1.0f, 0, 0, Rad(90), Rad(90), 0, 0, 0, 50, EASEINCUBIC, 60);
 	}
 }
 

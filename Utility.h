@@ -8,5 +8,6 @@ void DrawRotaGraph4(int x, int y, double rate, double anglex, double angley, dou
 Color GetColorHSV(float H, float S, float V);
 void SmartSetDrawBlendMode(int BlendMode, int Pal);
 double Rad(double angle);
+int Beat2Frame(double bpm, double beat, double bar);
 
 #endif

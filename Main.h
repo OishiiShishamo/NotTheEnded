@@ -21,6 +21,7 @@ class Vec2D;
 #include <string>
 #include <tuple>
 #include <vector>
+#include <random>
 
 #include "boost/multiprecision/cpp_int.hpp"
 #include "DxLib.h"
@@ -96,6 +97,8 @@ extern Property Properties;
 extern mainLoop Loop;
 
 extern Player Plyr;
+
+extern std::random_device rng;
 
 extern std::vector<Bullet> Bullets;
 extern std::vector<Laser> Lasers;
