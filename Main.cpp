@@ -48,6 +48,9 @@ int bombCanvas;
 int effectCanvas;
 int screenCanvas;
 
+double screenRotateX = 0;
+double screenRotateZ = 0;
+
 int
 WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 	Init();
@@ -71,6 +74,7 @@ WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, in
 		break;
 	}
 	SetDrawScreen(DX_SCREEN_BACK);
+	WaitKey();
 	timeMng.StartTimer();
 	while (1) {
 		timeMng.ElapsedTime();
@@ -82,7 +86,7 @@ WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, in
 		if (elapsedFrame == 0) {
 			elapsedFrame = 1;
 		}
-		ShowFPS(0, 0, 20, elapsedFrame, Color(C_WHITE));
+		//ShowFPS(0, 0, 20, elapsedFrame, Color(C_WHITE));
 
 		ScreenFlip();
 

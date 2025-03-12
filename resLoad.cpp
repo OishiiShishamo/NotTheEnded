@@ -8,6 +8,7 @@ void
 resLoad::UIGHLoad() {
 	imgRes.UIGH.emplace_back(LoadGraph("res/img/ui/UI_Frame.png"));
 	imgRes.UIGH.emplace_back(LoadGraph("res/img/ui/Weak_Point.png"));
+	imgRes.UIGH.emplace_back(LoadGraph("res/img/ui/poop.png"));
 }
 
 void

@@ -55,12 +55,12 @@ mainLoop::Loop() {
 		}
 	}
 	else {
-		DrawRotaGraph4(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, unko, 0, 0, 0, screenCanvas, 1, 0, 0);
+		DrawRotaGraph4(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, unko, screenRotateX, 0, screenRotateZ, screenCanvas, 1, 0, 0);
 	}
-	SmartSetDrawBlendMode(BLEND_NOBLEND, 255);
 	if (CheckHitKey(KEY_INPUT_P) == 1) {
 		SaveDrawScreen(0, 0, 1920, 1080, "ScreenShot.bmp");
 	}
+	SmartSetDrawBlendMode(BLEND_NOBLEND, 255);
 	if (GetAsyncKeyState(VK_F4) & 1) {
 		if (frame > frontChangeWindowSizeFrame + 15) {
 			frontChangeWindowSizeFrame = frame;

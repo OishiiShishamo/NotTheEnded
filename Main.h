@@ -70,6 +70,7 @@ class Vec2D;
 #define B_LASER 3
 #define B_LIGHT 4
 #define B_BIG 5
+#define B_UNKO 6
 
 #define LINEAR 0
 #define EASEINQUAD 1
@@ -120,5 +121,8 @@ extern int playerShotCanvas;
 extern int bombCanvas;
 extern int effectCanvas;
 extern int screenCanvas;
+
+extern double screenRotateX;
+extern double screenRotateZ;
 
 #endif
